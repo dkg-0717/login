@@ -5,8 +5,8 @@
     <p>Your username is: {{ user }}</p>
 
     <h1>Lista de Usuarios</h1>
-    <div v-for="user in users">
-      <p>{{user.id}} - {{ user.first_name}} - {{user.last_name}}</p>
+    <div v-for="(user,index) in users">
+      <p>{{index+1}} - {{ user.first_name}} - {{user.last_name}}</p>
     </div>
     
   </div>
